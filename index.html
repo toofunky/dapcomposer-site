@@ -11,16 +11,19 @@
         <div class="nav-brand">DAPComposer</div>
         <ul class="nav-links">
             <li><a href="#features">Features</a></li>
+            <li><a href="#download">Download</a></li>
             <li><a href="#getting-started">Getting Started</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="release-notes.html">Release Notes</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <div class="page">
         <header class="hero">
+            <img src="images/app-icon.webp" alt="DAPComposer app icon" class="hero-icon">
             <h1>DAPComposer</h1>
-            <p class="tagline">Build playlists, manage your local music library, and sync it straight to your digital audio player.</p>
+            <p class="tagline">Manage your local music library, and sync it straight to your digital audio player.</p>
         </header>
 
         <section id="features">
@@ -31,7 +34,7 @@
                     <h3>Effortless Library Management</h3>
                     <p>Point DAPComposer at your local music folders and it takes care of the rest, keeping your artists, albums, and playlists organized and ready to sync.</p>
                 </div>
-                <div class="feature-image-placeholder">Image placeholder</div>
+                <img src="images/manage-library.webp" alt="DAPComposer library management screen" class="feature-image">
             </div>
 
             <div class="feature-row reverse">
@@ -39,12 +42,35 @@
                     <h3>One-Click Sync</h3>
                     <p>Select the artists, albums, or playlists you want, then sync them to your digital audio player in one step &mdash; no manual file copying required.</p>
                 </div>
-                <div class="feature-image-placeholder">Image placeholder</div>
+                <img src="images/one-click-sync.webp" alt="DAPComposer one-click sync screen" class="feature-image">
             </div>
+
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3>Playlist Creator</h3>
+                    <p>Create custom playlists by selecting songs from your library, then sync them to your digital audio player with a single click.</p>
+                </div>
+                <img src="images/playlist-creator.webp" alt="DAPComposer playlist creator screen" class="feature-image">
+            </div>
+
+            <div class="feature-row reverse">
+                <div class="feature-text">
+                    <h3>Rescan Library</h3>
+                    <p>Rescan your music library at any time to pick up new additions or changes to your collection, then sync to update your device &mdash; no more mismatches between your library and what's on your player.</p>
+                </div>
+                <img src="images/rescan-library.webp" alt="DAPComposer rescan library screen" class="feature-image">
+            </div>
+        </section>
+
+        <section id="download">
+            <h2>Download</h2>
+            <p class="section-intro">DAPComposer is available for macOS on the App Store.</p>
+            <a href="https://apps.apple.com/app/dapcomposer/id1234567890" class="download-button">Download from the App Store</a>
         </section>
 
         <section id="getting-started">
             <h2>Getting Started</h2>
+            <p class="section-intro">Once you've downloaded DAPComposer from the App Store, you'll be syncing your music in just a few steps.</p>
             <ol class="steps-list">
                 <li>
                     <span class="step-number">1</span>
@@ -70,7 +96,47 @@
 
             <div class="faq-item">
                 <h3>Does DAPComposer work with any digital audio player?</h3>
-                <p>DAPComposer works with any device that mounts as a writable storage volume on macOS, including most third-party and open-source firmware players.</p>
+                <p>DAPComposer works with any device that mounts as a writable storage volume on macOS, including most third-party and open-source firmware players. It does not support stock Apple devices such as iPods or iPhones. It should work with iPods running Rockbox or other third-party firmware.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What files does DAPComposer work with?</h3>
+                <p>DAPComposer works with most common audio file formats, including MP3, M4A, FLAC, and WAV. Also supported are cover images (e.g., <code>Cover.jpg</code>) and lyric (LRC) files. Files containing DRM (digital rights management) protection are not supported.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does DAPComposer require an internet connection?</h3>
+                <p>No. DAPComposer runs entirely on your Mac and does not require an internet connection to function. All library scanning, playlist creation, and syncing happens locally on your Mac.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>My library scan is taking a long time. Why?</h3>
+                <p>Library scans, particularly the initial scan, can take time depending on the size of your collection and the speed of your storage device. Subsequent scans are typically faster. Consider scanning during periods of low system activity.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I sync multiple libraries?</h3>
+                <p>Yes and No. While DAPComposer does allow you to have multiple libraries, you can only sync one at a time.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I sync multiple devices?</h3>
+                <p>Yes. DAPComposer allows you to add and sync multiple digital audio players. Each device can have its own selection of artists, albums, and playlists.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>After I sync my files, I don't see them on my device. Why not?</h3>
+                <p>Some devices may require rescanning the library on device or importing playlists manually.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I modify the files on my device?</h3>
+                <p>This is not recommended. DAPComposer utilizes a one-way sync and may overwrite any changes made to files on your device during synchronization. Changes made directly on the device are not sent back to your Mac.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does DAPComposer support streaming services?</h3>
+                <p>No. DAPComposer is designed to manage and sync your local music library only. It does not support streaming services such as Spotify, Apple Music, or Tidal.</p>
             </div>
 
             <div class="faq-item">
