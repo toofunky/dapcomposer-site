@@ -207,6 +207,18 @@ a:hover {
     text-align: center;
 }
 
+.download-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.download-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Features */
 
 .feature-row {
