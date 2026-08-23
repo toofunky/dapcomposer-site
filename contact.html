@@ -7,13 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="site-nav">
+        <div class="nav-brand"><a href="index.html">DAPComposer</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#getting-started">Getting Started</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <header>
             <div class="app-brand">DAPComposer</div>
             <h1>Contact</h1>
+            <div class="effective-date">Have a bug to report or a question? Send us a message below.</div>
         </header>
 
-        <p>Contact form coming soon.</p>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="8" placeholder="Describe the issue or question in as much detail as possible..." required></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Send</button>
+                <p class="form-note">Clicking Send will open your email client with this message addressed to support@dapcomposer.app.</p>
+            </div>
+        </form>
     </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+            var mailto = 'mailto:support@dapcomposer.app'
+                + '?subject=' + encodeURIComponent(subject)
+                + '&body=' + encodeURIComponent(message);
+            window.location.href = mailto;
+        });
+    </script>
 </body>
 </html>
