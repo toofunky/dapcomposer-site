@@ -30,6 +30,10 @@
                 <input type="text" id="subject" name="subject" required>
             </div>
             <div class="form-group">
+                <label for="version">DAPComposer Version</label>
+                <input type="text" id="version" name="version" placeholder="e.g. 1.0">
+            </div>
+            <div class="form-group">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="8" placeholder="Describe the issue or question in as much detail as possible..." required></textarea>
             </div>
@@ -40,14 +44,23 @@
         </form>
     </div>
 
+    <footer>
+        &copy; 2026 Major Talent Studios, LLC. All rights reserved.
+        &middot; <a href="privacy-policy.html">Privacy Policy</a>
+        &middot; <a href="terms.html">Terms</a>
+        &middot; <a href="eula.html">EULA</a>
+    </footer>
+
     <script>
         document.getElementById('contact-form').addEventListener('submit', function (e) {
             e.preventDefault();
             var subject = document.getElementById('subject').value;
+            var version = document.getElementById('version').value;
             var message = document.getElementById('message').value;
+            var body = 'DAPComposer Version: ' + version + '\n\n' + message;
             var mailto = 'mailto:support@dapcomposer.app'
                 + '?subject=' + encodeURIComponent(subject)
-                + '&body=' + encodeURIComponent(message);
+                + '&body=' + encodeURIComponent(body);
             window.location.href = mailto;
         });
     </script>
