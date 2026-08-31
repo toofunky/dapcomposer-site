@@ -112,6 +112,14 @@ footer {
     color: var(--text-muted);
 }
 
+.footer-support {
+    margin-top: 16px;
+}
+
+.footer-support img {
+    height: 40px;
+}
+
 a {
     color: var(--accent);
     text-decoration: none;
